@@ -2,8 +2,8 @@
 
 ### Prerequisites
 * [Visual Studio](https://visualstudio.microsoft.com/vs/) 2022 or later.
-* [Docker](https://www.docker.com/)
-* RabbitMQ - after docker gets downloaded the RabbitMQ image should be pulled through CMD: <pre>docker pull rabbitmq</pre>
+* [MongoDB](https://www.mongodb.com)
+* MongoDB - after docker gets downloaded the MongoDB image should be pulled through CMD: <pre>docker pull mongo</pre>
 In order to access the admin panel in docker, the following command should be run in CMD: <pre>docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management</pre>
 Versions should be checked while pulling latest RabbitMQ image.
 
