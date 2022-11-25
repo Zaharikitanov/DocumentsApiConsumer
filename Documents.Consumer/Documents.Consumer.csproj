@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -10,8 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="database-data\.mongodb\mongosh\snippets\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="database-data\.mongodb\mongosh\637a679cc05f29a59abe09ab_log" />
+    <None Include="database-data\.mongodb\mongosh\637a679eca3978ee569a646e_log" />
+    <None Include="database-data\.mongodb\mongosh\config" />
+    <None Include="database-data\.mongodb\mongosh\mongosh_repl_history" />
+    <None Include="database-data\.mongodb\mongosh\snippets\index.bson.br" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+    <PackageReference Include="STP.AspNetCore.Bus" Version="4.1.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 

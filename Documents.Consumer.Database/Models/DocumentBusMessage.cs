@@ -1,12 +1,12 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using STP.AspNetCore.Bus.Abstractions;
 
 namespace DocumentsApi.Messages
 {
-    public class DocumentBusMessage
+    public class DocumentBusMessage : BusMessage
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public string MessageId { get; set; } = null!;
 
         [BsonElement("DocumentId")]
