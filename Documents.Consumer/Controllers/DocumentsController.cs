@@ -20,7 +20,7 @@ namespace Documents.Consumer.Controllers
         public async Task<List<DocumentBusMessage>> Get() =>
             await _service.GetAsync();
 
-        [HttpGet("{messageId:length(24)}")]
+        [HttpGet("{messageId}")]
         public async Task<ActionResult<DocumentBusMessage>> Get(string messageId)
         {
             var documentBusMessage = await _service.GetAsync(messageId);
@@ -41,7 +41,7 @@ namespace Documents.Consumer.Controllers
             return CreatedAtAction(nameof(Get), new { messageId = newDocumentBusMessage.MessageId }, newDocumentBusMessage);
         }
 
-        [HttpPut("{messageId:length(24)}")]
+        [HttpPut("{messageId}")]
         public async Task<IActionResult> Update(string messageId, DocumentBusMessage updatedDocumentBusMessage)
         {
             var documentBusMessage = await _service.GetAsync(messageId);
@@ -58,7 +58,7 @@ namespace Documents.Consumer.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{messageId:length(24)}")]
+        [HttpDelete("{messageId}")]
         public async Task<IActionResult> Delete(string messageId)
         {
             var documentBusMessage = await _service.GetAsync(messageId);

@@ -10,15 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="database-data\.mongodb\mongosh\snippets\package.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="database-data\.mongodb\mongosh\637a679cc05f29a59abe09ab_log" />
-    <None Include="database-data\.mongodb\mongosh\637a679eca3978ee569a646e_log" />
-    <None Include="database-data\.mongodb\mongosh\config" />
-    <None Include="database-data\.mongodb\mongosh\mongosh_repl_history" />
-    <None Include="database-data\.mongodb\mongosh\snippets\index.bson.br" />
+    <Compile Remove="database-data\**" />
+    <Content Remove="database-data\**" />
+    <EmbeddedResource Remove="database-data\**" />
+    <None Remove="database-data\**" />
   </ItemGroup>
 
   <ItemGroup>
