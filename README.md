@@ -8,7 +8,7 @@
 ### Setup
 - items in the prerequsites section should be installed
 - project should be downloaded into your local machine
-- url for MongoDB dashboard: [Setup Tutorial](https://youtu.be/tiD2ju8dK24)
+- url for MongoDB dashboard: http://localhost:8081/ [Setup Tutorial](https://youtu.be/tiD2ju8dK24)
 
 ### Resources
 * [Setup Tutorial](https://youtu.be/tiD2ju8dK24)
